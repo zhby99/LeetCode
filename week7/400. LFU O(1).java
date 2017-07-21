@@ -1,5 +1,14 @@
 public class LFUCache {
 
+  /*
+  Frequency Lists:
+  0: head-x-x-x-x-x-x-tail,
+  1: head-x-x-x-x-x-x-tail,
+  2: head-x-x-x-x-x-x-tail,
+  ......
+  n: head-x-x-x-x-x-x-tail,
+  */
+
     HashMap<Integer, Node> cache;
     HashMap<Integer, Node> headLists;
     HashMap<Integer, Node> tailLists;
